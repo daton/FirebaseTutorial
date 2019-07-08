@@ -44,7 +44,10 @@ Despues oprimes el boton de Registrar aplicación y el siguente paso es el archi
  Debemos postetiormente de esto,   generar las clases:<br><br>
  ** MyFirebaseMessaginfService
  ** MyFirebaseInstanceIDService
- ** MyJobService
+ ** MyJobService <br>
+ Estos archivo generalos en la carpeta Java de tu proyecto con los mismos nombres
+ y replicalos en la misma carpeta de tu proyecto. <br><br>
+ 
 
 Ahora el siguiente paso es agregar  los servicios d notificacion siguientes en el archivo
 AndroidManifest.xml, esto lo debes agregar inmediatamente abajo de la etiqueta e cierre
@@ -69,6 +72,12 @@ de la activity de el manifest:
             </intent-filter>
         </service>
 ```
+Ahora de los archivos de este proyecto copia de la carpeta drawable el icono de 
+notificaciones que se llama ** ic_stat_ic_notification.png ** y copialo en la misma
+carpeta.<br>
+Posteriormente de la carpeta de values ve al archivo string.xml de este proyecto 
+y copia todos los strings de ese archivo y pegalos en el corrspondiented e tu proyecto.<br><br>
+
  Para verificar que todo esta bien, en es emiso archivo da clicl en la barira d Sync Now para 
  que verifiques que todo esta bien y que el proyecto descargo bien las dependencias.
  Le das click a siguiente y en ese ultimo paso se  comunicara de forma automatica la
