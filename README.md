@@ -42,6 +42,10 @@ Despues oprimes el boton de Registrar aplicación y el siguente paso es el archi
  ```
  Para verificar que todo esta bien, en es emiso archivo da clicl en la barira d Sync Now para 
  que verifiques que todo esta bien y que el proyecto descargo bien las dependencias.
+ Le das click a siguiente y en ese ultimo paso se  comunicara de forma automatica la
+ consola de firebase a tu app, este proceso tarda un poco. Puedes darle click al link de saltar este
+  paso.
+  
  
  
  
