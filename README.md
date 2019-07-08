@@ -19,5 +19,17 @@ Despues oprimes el boton de Registrar aplicación y el siguente paso es el archi
  Project de Android Studio y alli pegas ese archivo json dentro de la carpeta 
  app d la vista de Project.<br><br>
  ![](.README_images/1ccc6dd9.png)<br><br>
+ Despues debes de añadir el SDK de firebase a tu proyecto: Primero a nivel de gradle de proyecto 
+ vas a agregar<br><br>
+ ```
+ buildscript {
+   dependencies {
+     // Add this line
+     classpath 'com.google.gms:google-services:4.2.0'
+   }
+ }
+ ```
+ 
+ 
 
 
