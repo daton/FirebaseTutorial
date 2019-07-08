@@ -44,7 +44,11 @@ Despues oprimes el boton de Registrar aplicación y el siguente paso es el archi
  que verifiques que todo esta bien y que el proyecto descargo bien las dependencias.
  Le das click a siguiente y en ese ultimo paso se  comunicara de forma automatica la
  consola de firebase a tu app, este proceso tarda un poco. Puedes darle click al link de saltar este
-  paso.
+  paso.<br><br>
+  Despues en la siguiente ventana de firebase vas a encontrar del menu de la izquierda
+   una opcion que dice Cloud Messaging, le das click en  esa opción, como se ilustra en la siguiente
+    figura<br><br>
+    ![](.README_images/cbf83cea.png)
   
  
  
