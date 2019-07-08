@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1027273948492",
+    "firebase_url": "https://fir-fcm-tutorial.firebaseio.com",
+    "project_id": "fir-fcm-tutorial",
+    "storage_bucket": "fir-fcm-tutorial.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027273948492:android:9088bec6f69a1de8",
+        "android_client_info": {
+          "package_name": "com.example.firebasetutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027273948492-5gf4f6k9s281cnei9r590iv74k459j6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWl3AwFgqa6LC_FQWP6M-4GI9D432lag4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027273948492-5gf4f6k9s281cnei9r590iv74k459j6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,7 +2,8 @@
 
 ## Configuración inicial
 El primer paso es obtener un añadir un proyecto nuevo en firebase, [en la siguiente
-URL](https://console.firebase.google.com)  y añadir un nuevo  proyecto.
+URL](https://console.firebase.google.com)  y añadir un nuevo  proyecto. Aqui aparecerán
+varios pasos a seguir<br><br>
 ![](.README_images/84e89d5e.png)<br>
 De inmediato se te asigna un id de proyecto, el cual es muy importante, a continuaion se 
 nos pide seleccionar una tecnología, seleccionamos Android<br>
@@ -13,5 +14,10 @@ ver en la el archivo gradle de nivel de modulo o en el nombre del paquete que se
 en la main activity y que todas tus clases tendran. Es muy importante este paquete, ya que
 firebase va a enlazar tu app directamente a este nombr y si no coincide lo recharzará
 ![](.README_images/3e5f27d8.png)<br><br>
+Despues oprimes el boton de Registrar aplicación y el siguente paso es el archivo
+ JSON de descarga de google.services, este archivo lo descargas y te vas a la vista
+ Project de Android Studio y alli pegas ese archivo json dentro de la carpeta 
+ app d la vista de Project.<br><br>
+ ![](.README_images/1ccc6dd9.png)<br><br>
 
 
