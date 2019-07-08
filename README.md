@@ -36,15 +36,39 @@ Despues oprimes el boton de Registrar aplicación y el siguente paso es el archi
     implementation 'com.google.firebase:firebase-core:15.0.2'
     implementation 'com.firebase:firebase-jobdispatcher:0.8.5'
  ```
- Debemos de generar las clases:<br><br>
+ 
+ Hasta abajo de ese archivo de del build d nivel de modulo agregas<br>
+ ```
+  apply plugin: 'com.google.gms.google-services'
+  ```
+ Debemos postetiormente de esto,   generar las clases:<br><br>
  ** MyFirebaseMessaginfService
  ** MyFirebaseInstanceIDService
  ** MyJobService
- Finalmente en ese mismo archivo gradle de nivel de modulo agregar al final el siguiente
- renglón:
- ```
- apply plugin: 'com.google.gms.google-services'
- ```
+
+Ahora el siguiente paso es agregar  los servicios d notificacion siguientes en el archivo
+AndroidManifest.xml, esto lo debes agregar inmediatamente abajo de la etiqueta e cierre
+de la activity de el manifest:
+```
+ <!-- Agregamos aqui la parte de el servicio de mensajeria -->
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+```
  Para verificar que todo esta bien, en es emiso archivo da clicl en la barira d Sync Now para 
  que verifiques que todo esta bien y que el proyecto descargo bien las dependencias.
  Le das click a siguiente y en ese ultimo paso se  comunicara de forma automatica la
@@ -54,7 +78,11 @@ Despues oprimes el boton de Registrar aplicación y el siguente paso es el archi
    una opcion que dice Cloud Messaging, le das click en  esa opción, como se ilustra en la siguiente
     figura<br><br>
     ![](.README_images/cbf83cea.png)
-  
+ 
+ Ahora el siguiente paso es generar un primer mensaje de envio, da click en "Send your 
+ First Message" y sigue los pasos.<br><br>
+ ![](.README_images/d1a90622.png) 
+ 
  
  
  
