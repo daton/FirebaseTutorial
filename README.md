@@ -32,9 +32,14 @@ Despues oprimes el boton de Registrar aplicación y el siguente paso es el archi
  
  Después en el gradle de nivel de módulo agregar la siguiente dependencia:
  ```
- implementation 'com.google.firebase:firebase-core:17.0.0'
+  implementation 'com.google.firebase:firebase-messaging:15.0.2'
+    implementation 'com.google.firebase:firebase-core:15.0.2'
+    implementation 'com.firebase:firebase-jobdispatcher:0.8.5'
  ```
- 
+ Debemos de generar las clases:<br><br>
+ ** MyFirebaseMessaginfService
+ ** MyFirebaseInstanceIDService
+ ** MyJobService
  Finalmente en ese mismo archivo gradle de nivel de modulo agregar al final el siguiente
  renglón:
  ```
