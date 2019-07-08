@@ -30,6 +30,21 @@ Despues oprimes el boton de Registrar aplicación y el siguente paso es el archi
  }
  ```
  
+ Después en el gradle de nivel de módulo agregar la siguiente dependencia:
+ ```
+ implementation 'com.google.firebase:firebase-core:17.0.0'
+ ```
+ 
+ Finalmente en ese mismo archivo gradle de nivel de modulo agregar al final el siguiente
+ renglón:
+ ```
+ apply plugin: 'com.google.gms.google-services'
+ ```
+ Para verificar que todo esta bien, en es emiso archivo da clicl en la barira d Sync Now para 
+ que verifiques que todo esta bien y que el proyecto descargo bien las dependencias.
+ 
+ 
+ 
  
 
 
