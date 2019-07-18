@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-            Toast.makeText(this,"Token",Toast.LENGTH_LONG).show()
+
         }
 
     }
