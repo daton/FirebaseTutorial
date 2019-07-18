@@ -5,6 +5,12 @@ import android.app.NotificationManager
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
+import com.google.android.gms.tasks.OnCompleteListener
+import com.google.firebase.iid.FirebaseInstanceId
+
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,5 +32,25 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+
+        registrar.setOnClickListener {
+              var token=      FirebaseInstanceId.getInstance().instanceId.addOnCompleteListener(
+                  OnCompleteListener {
+                      task->
+                      if(!task.isSuccessful){
+                         return@OnCompleteListener
+                      }
+                     val tokeno=task.result?.token
+                      Log.i("ya","jajajajass  $tokeno  es este")
+
+                  }
+
+              )
+
+
+
+            Toast.makeText(this,"Token",Toast.LENGTH_LONG).show()
+        }
+
     }
 }
